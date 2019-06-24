@@ -1,11 +1,18 @@
 import React from 'react'
+import './Nav.css'
+import {withRouter} from 'react-router-dom'
+const Nav = (props) => {
+  
+  return(
+    <div>
+      {props.location.pathname !== '/'
+        ?<h1 className="Nav">
+          Nav
+        </h1>
+        :null
+      }
+    </div>
+  ) 
+  }
 
-const Nav = () => {
-  return<>
-  <h1>
-    Nav
-  </h1>
-    </>
-}
-
-export default Nav
+export default withRouter(Nav)
