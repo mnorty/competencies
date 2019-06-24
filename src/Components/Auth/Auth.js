@@ -33,7 +33,7 @@ class Auth extends Component{
 		axios
 		.post('/auth/login', { username, password })
 		.then((res) => {
-			this.props.history.push('/LandingPage')
+			this.props.history.push('/dashboard')
 		})
 		.catch((err) => {
 			console.log('Username or Password are incorrect')
@@ -46,7 +46,7 @@ class Auth extends Component{
 		axios
 			.post('/auth/register', {email, username, password })
 			.then((res) => {
-				this.props.history.push('/LandingPage')
+				this.props.history.push('/dashboard')
 			})
 			.catch((err) => {
 				console.log('Username has already been taken')
