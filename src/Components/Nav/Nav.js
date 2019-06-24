@@ -1,16 +1,21 @@
 import React from 'react'
 import './Nav.css'
 import {withRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 const Nav = (props) => {
   
   return(
     <div>
       {props.location.pathname !== '/'
-        ?<h1 className="Nav">
-          Nav
-        </h1>
+        ?<div className="Nav">
+          <Link to='/dashboard'>Home</Link>
+          <Link to='/post'>New Post</Link>
+          <Link to='/'>Logout</Link>
+        </div>
+        
         :null
       }
+      
     </div>
   ) 
   }

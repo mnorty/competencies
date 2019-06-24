@@ -1,4 +1,4 @@
-/* .Auth {
+.Auth {
   width: 100vw;
   height: 100vh;
   background-image: -webkit-linear-gradient(351deg, #ff70a6, #ff9770 40%, #ffd670 73%, #e9ff70);
@@ -34,4 +34,4 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 20px;
-} */
+}

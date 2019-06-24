@@ -5,7 +5,6 @@ import './Auth.css'
 const Auth = () => {
     return (
     <div className='Auth'>
-        <h1>Auth</h1>
         <div className='authContainer'>
 
         </div>
